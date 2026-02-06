@@ -1,0 +1,10 @@
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        lowest_val = min(prices)
+        highest_val = max(prices)
+
+        # do dis
