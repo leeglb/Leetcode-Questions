@@ -1,0 +1,24 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        reversal = str(x)[::-1]
+        boolean = False
+
+        if(reversal == str(x)):
+            boolean = True
+
+        else: 
+
+            boolean = False
+        
+            
+        return boolean
+
+
+
+
+a = Solution()
+a.isPalindrome(121)

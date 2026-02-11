@@ -1,0 +1,18 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        no_special_c = "".join([char for char in s if char.isalnum()])
+        no_special_c = no_special_c.lower()
+
+
+        if no_special_c == no_special_c[::-1]:
+
+            return True
+        
+        else:
+
+            return False 
+        
