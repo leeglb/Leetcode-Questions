@@ -1,0 +1,14 @@
+class Solution(object):
+    def addDigits(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+
+        result = 1 + ((num - 1)) % 9
+        
+        return result
+            
+            
+a = Solution()
+print(a.addDigits(381))
