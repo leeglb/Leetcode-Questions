@@ -1,0 +1,14 @@
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        
+        return -n & n == n > 0
+    
+    
+        """
+        it returns the bitwise between n and inversion of n since inversion 
+        = n + 1. If it equals to n > 0, then return true, else. 
+        """
