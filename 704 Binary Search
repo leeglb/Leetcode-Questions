@@ -1,0 +1,31 @@
+class Solution(object):
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        
+        upper_bound = len(nums) - 1
+        lower_bound = 0 
+
+        while lower_bound <= upper_bound:
+
+            midpoint = (upper_bound + lower_bound) // 2 
+
+            mid_value = nums[midpoint]
+
+            if mid_value == target:
+
+                return nums.index(mid_value)
+
+            elif mid_value < target: 
+
+                lower_bound = midpoint + 1 
+
+            else:
+
+                upper_bound = midpoint - 1          
+
+        return -1
+    
